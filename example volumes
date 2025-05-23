@@ -1,2 +1,7 @@
 @-- Exemplo volume bind --@
 #docker run -it --name ubuntu --mount type=bind,source=/C/teste,target=/app ubuntu bash
+
+@-- Exemplo volume permanente --@
+#docker volume create ubuntu-volume
+
+#docker run -it --name ubuntu --mount source=ubuntu-volume,target=/app ubuntu bash
