@@ -1,3 +1,5 @@
 #docker pull jboss/wildfly
 
 #docker run -p 8080:8080 -p 9990:9990 -it jboss/wildfly /opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
+
+@-- após inicializção do container, o arquivo add.user.sh deve ser executado para parametrização do usuário conforme documentação https://bgasparotto.com/add-user-wildfly --@
